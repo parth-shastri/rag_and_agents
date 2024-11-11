@@ -1,0 +1,22 @@
+define user ask about baskets
+  "What is basket investing ?"
+  "What are baskets?"
+  "What do you mean by baskets by XYZ?"
+
+define user ask about rebalance
+  "What is a rebalance?"
+  "What is meant by rebalancing?"
+
+define bot respond to ask about baskets
+  "An investment basket is a group of stocks selected by a professional Research Analyst (RA) or Registered Investment Adviser (RIA) that is made available to support your investing objectives. The baskets recommended are regularly rebalanced by the manager to ensure you get the latest insights. All trades happen in your brokerage account and you have control over buying, selling, and whether to follow a rebalance. The act of investing in such a basket is termed as `basket investing`"
+
+define bot respond to ask about rebalance
+  "Rebalancing is the process of aligning the assets you have in your current portfolio to the new allocation in the latest recommendation from the manager. The platform notifies you when a manager has uploaded a rebalance and all you need to do is review the new allocation and place the trades. Rebalancing on time is crucial for ensuring you are making the most of your subscription and the manager's recommendations. If you don't rebalance or delay rebalancing there is an increased change of your returns varying from the overall basket."
+
+define flow ask about baskets
+  user ask about baskets
+  bot respond to ask about baskets
+
+define flow ask about rebalance
+  user ask about rebalance
+  bot respond to ask about rebalance

@@ -1,0 +1,24 @@
+define user express greeting
+  "Hello"
+  "Hi"
+  "Wassup"
+
+define user ask about capabilities
+  "What can you do for me?"
+  "What are your capabilities?"
+
+define bot express greeting
+  "Hey there!"
+
+define bot ask how are you
+  "How are you"
+  "How are you? how can I help you?"
+
+define flow greeting
+  user express greeting
+  bot express greeting
+  bot ask how are you
+
+define flow ask about capabilities
+  user ask about capabilities
+  bot "I can assist in analysing stocks and creating simple reports based on fundamentals. I can also assist with baskets offered by XYZ and your portfolios."

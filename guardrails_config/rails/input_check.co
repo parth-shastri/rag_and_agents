@@ -1,0 +1,11 @@
+
+define bot refuse to respond
+  "I am virtual research analyst here to help with financial analysis for the equity markets, XYZ baskets & user portfolios. I cannot provide with personalized financial advice or recommendations. The current query is not about any of these. Let me know if I can help with any other query related to the above."
+
+
+define flow self_check_input
+  $allowed = execute self_check_input
+
+  if not $allowed
+    bot refuse to respond
+    stop
